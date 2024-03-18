@@ -21,7 +21,7 @@ export const showProducts = (req, res) => {
 
 // get single product
 export const showProductById = (req, res) => {
-    getProductById(req.params.id, (err, result) => {
+    getProductById(req.params.id, (err, results) => {
         if(err){
             res.send(err)
         }
